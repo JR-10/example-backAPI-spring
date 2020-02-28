@@ -24,6 +24,10 @@
         private String cargo;
         private String empresa;
         private String direccion;
+
+        @Column(name = "detalle_dir")
+        private String detalleDir;
+
         private String pais;
         private String ciudad;
 
@@ -93,6 +97,14 @@
 
         public void setDireccion(String direccion) {
             this.direccion = direccion;
+        }
+
+        public String getDetalleDir() {
+            return detalleDir;
+        }
+
+        public void setDetalleDir(String detalleDir) {
+            this.detalleDir = detalleDir;
         }
 
         public String getPais() {
